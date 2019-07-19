@@ -9,7 +9,7 @@ permalink: /dev/
 	<ol>
 		{%- for each in obj[1] %}
 		<li>
-			<input type="checkbox" id='{{ each }}'{% if obj[0] == "done" %} checked{% endif %}>
+			<input type="checkbox" id='{{ each }}'{% if obj[0] == 'done' %} checked{% endif %}>
 			<label for='{{ each }}'>{{ each }}</label>
 		</li>
 		{%- endfor %}

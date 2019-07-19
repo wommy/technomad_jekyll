@@ -1,7 +1,12 @@
 # todos
 done:
-- put up site
+- put up site & the first blog post manifest
 
 todo:
 - put up olde
 - finish readme
+- link todos and commits, adding a date to these
+- edit _config.yml description
+- write a create_post bash_script
+- separate out workflows, dev from writing
+- separate out blog_posts, github submodule <= ? budparr
