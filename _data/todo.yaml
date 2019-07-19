@@ -1,10 +1,12 @@
 # todos
 done:
-- put up site & the first blog post manifest
+- put up site
 - write a create_post bash_script
 
 todo:
 - put up olde
+- how i set this up, jekyll + netlify
+- my editor and computer set up
 - finish readme
 - link todos and commits, adding a date to these
 - edit _config.yml description
