@@ -2,13 +2,22 @@
 done:
 - put up site
 - write a create_post bash_script
-
-todo:
 - put up olde
-- how i set this up, jekyll + netlify
-- my editor and computer set up
+
+misc minor:
 - finish readme
+- edit _config.yml description & segment title append
+
+- separate out workflows, dev & writing
+- github submodule for blog_posts? <= budparr
+
+future blog_post ideas:
+- css - external, internal, inline 
+- html-preproccesers - haml, jade, pug
+- how i set up jekyll & netlify
+- my editor and computer set up
+
+jekyll theme tweaks:
+- !css bump up fontsize and ? lineheight
+- !html footer link to repo ?
 - link todos and commits, adding a date to these
-- edit _config.yml description
-- separate out workflows, dev from writing
-- separate out blog_posts, github submodule <= ? budparr
