@@ -31,28 +31,28 @@
 	</head>
 	<body>
 		<header>
-		{%- for obj in site.data.olde.header %}
+			{%- for obj in site.data.olde.header %}
 			<div>
-				<p>{{ obj[0] }}</p>
+				<p>{{ obj.first }}</p>
 				<nav>
-					{%- for each in obj[1] %}
+					{%- for each in obj.last %}
 					{{ each }}
 					{%- endfor %}
 				</nav>
 			</div>
-		{%- endfor %}
+			{%- endfor %}
 		</header>
 		<main>
-		{%- for obj in site.data.olde.main %}
+			{%- for obj in site.data.olde.main %}
 			<div>
-				<p>{{ obj[0] }}</p>
+				<p>{{ obj.first }}</p>
 				<div>
-				{%- for each in obj[1] %}
+					{%- for each in obj.last %}
 					<p>- {{ each }}</p>
-				{%- endfor %}
+					{%- endfor %}
 				</div>
 			</div>
-		{%- endfor %}
+			{%- endfor %}
 		</main>
 		<footer style='display: none;'>
 			Tasks
