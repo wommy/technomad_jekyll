@@ -46,11 +46,13 @@
 			{%- for obj in site.data.olde.main %}
 			<div>
 				<p>{{ obj.first }}</p>
+				{%- if obj.last %}
 				<div>
 					{%- for each in obj.last %}
 					<p>- {{ each }}</p>
 					{%- endfor %}
 				</div>
+				{%- endif %}
 			</div>
 			{%- endfor %}
 		</main>
