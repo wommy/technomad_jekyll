@@ -6,17 +6,17 @@ head:
     content: Tommy, Williams, Wommy, Tilliams, Website, Websites, Design, Develop, Development, Make, Create
 header:
   portfolio:
-  - <a href="//aparadi.se/">aparadi.se</a>
-  - <a href="//wommytilliams.com/8c/">eightcell</a>
+    - <a href="//aparadi.se/">aparadi.se</a>
+    - <a href="//wommytilliams.com/8c/">eightcell</a>
   to hire me for website work<br>contact:
-  - <a href="mailto:froggie92@gmail.com?Subject=Job | WommyTilliams.com">email</a>
-  - <!-- <a href="tel:+13128189011">Phone</a> -->
+    - <a href="mailto:froggie92@gmail.com?Subject=Job | WommyTilliams.com">email</a>
+    - <!-- <a href="tel:+13128189011">Phone</a> -->
   to get an idea of who i am<br>stalk me on social media:
-  - <a href="//facebook.com/Froggie92">facebook</a>
-  - <a href="//twitter.com/Froggie92">twitter</a>
-  - <a href="//instagram.com/wommytilliams">instagram</a>
-  - <a href="//plus.google.com/118102255716845472363/">google+</a>
-  - <a href="//reddit.com/user/Froggie92/">reddit</a>
+    - <a href="//facebook.com/Froggie92">facebook</a>
+    - <a href="//twitter.com/Froggie92">twitter</a>
+    - <a href="//instagram.com/wommytilliams">instagram</a>
+    - <a href="//plus.google.com/118102255716845472363/">google+</a>
+    - <a href="//reddit.com/user/Froggie92/">reddit</a>
 main:
   welcome:
   tommy williams is:
