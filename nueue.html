@@ -6,7 +6,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, inital-scale=1" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Tommy Williams</title>
+		<title>{{ site.data.olde.head.title }}</title>
 		<style type="text/css">
 			body{
 				margin: 0;
@@ -23,11 +23,11 @@
 				list-style: decimal inside;
 			}
 			p{ margin: 0; }
-			div{ margin-bottom: 19px;}
+			div{ margin-bottom: 18.9px;}
 		</style>
-		<meta name="author" content="Tommy Williams, Wommy Tilliams">
-		<meta name="description" content="Tommy Williams's Website - Website Design / Development">
-		<meta name="keywords" content="Tommy, Williams, Wommy, Tilliams, Website, Websites, Design, Develop, Development, Make, Create">
+		{%- for each in site.data.olde.head.meta %}
+		<meta name="{{each.first}}" content="{{each.last}}">
+		{%- endfor %}
 	</head>
 	<body>
 		<header>
