@@ -6,7 +6,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, inital-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>{{ site.data.olde.head.title }}</title>
+		<title>{{ site.data.old3.head.title }}</title>
 		<style type="text/css">
 			body{
 				margin: 0;
@@ -22,43 +22,37 @@
 				display: list-item;
 				list-style: decimal inside;
 			}
-			p{ margin: 0; }
-			div{ margin-bottom: 18.9px;}
 		</style>
-		{%- for each in site.data.olde.head.meta %}
+		{%- for each in site.data.old3.head.meta %}
 		<meta name="{{ each.first }}" content="{{ each.last }}">
 		{%- endfor %}
 	</head>
 	<body>
 		<header>
-			{%- for obj in site.data.olde.header %}
-			<div>
-				<p>{{ obj.first }}</p>
-				<nav>
-					{%- for each in obj.last %}
-					{{ each }}
-					{%- endfor %}
-				</nav>
-			</div>
+			{%- for obj in site.data.old3.header %}
+			{{ obj.first }}
+			<nav>
+				{%- for each in obj.last %}
+				{{ each }}
+				{%- endfor %}
+			</nav>
+			<br>
 			{%- endfor %}
 		</header>
 		<main>
-			{%- for obj in site.data.olde.main %}
-			<div>
-				<p>{{ obj.first }}</p>
-				{%- if obj.last %}
-				<div>
-					{%- for each in obj.last %}
-					<p>{{ each | prepend: '- ' }}</p>
-					{%- endfor %}
-				</div>
-				{%- endif %}
-			</div>
+			{%- for each in site.data.old3.main %}
+			{%- unless each.first %}
+			{{ each | append: '<br>' }}
+			{%- else %}
+				{%- for listitem in each %}
+				{{ listitem | append: '<br>' | prepend: '- ' }}
+				{%- endfor %}
+			{%- endunless %}
 			{%- endfor %}
 		</main>
 		<footer style='display: none;'>
 			Tasks
-			{%- for state in site.data.olde.tasks %}
+			{%- for state in site.data.old3.tasks %}
 			{%- for task in state.last %}
 			{%- unless task.first %}
 			{{ task | prepend: state.first}}
