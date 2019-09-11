@@ -5,7 +5,7 @@
 read -p 'title?: ' title
 
 # create title_long variable for easier repitition
-title_long='_posts/'$(date +%F)'-'$title'.md'
+title_long=$(date +%F)'-'$title'.md'
 
 # create post
 touch $title_long
@@ -16,3 +16,4 @@ echo 'layout: post' >> $title_long
 echo 'title: "'$title'"' >> $title_long
 echo 'date: '$(date "+%F %T %z") >> $title_long
 echo '---' >> $title_long
+
