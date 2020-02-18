@@ -2,16 +2,47 @@
 layout: page
 title: todo
 permalink: /todo/
----
+todos:
+  done:
+    - put up site
+    - write a create_post bash_script
+    - put up olde
+    - olde 2 nueue
 
-{% for obj in site.data.todo %}
-	<h2>{{ obj[0] }}</h2>
-	<ol>
-		{%- for each in obj[1] %}
-		<li>
-			<input type="checkbox" id='{{ each }}'{% if obj[0] == 'done' %} checked{% endif %}>
-			<label for='{{ each }}'>{{ each }}</label>
-		</li>
-		{%- endfor %}
-	</ol>
+  doing:
+    - nueue
+
+  misc minor:
+    - dev branch => PRs from there
+    - finish readme
+    - edit _config.yml description & segment title append
+
+    - separate out workflows, dev & writing
+    - github submodule for blog_posts? <= budparr
+
+  future blog_post ideas:
+    - css - external, internal, inline 
+    - html-preproccesers - haml, jade, pug
+    - how i set up jekyll & netlify
+    - my editor and computer set up
+
+  jekyll theme tweaks:
+    - !css bump up fontsize and ? lineheight
+    - !css system-ui - https://css-tricks.com/snippets/css/system-font-stack/#article-header-id-2
+    - !css 3 breakpoints - olde-new
+    - !html footer link to repo ?
+    - link todos and commits, adding a date to these
+---
+{%- for obj in page.todos %}
+  <h2>{{ obj[0] }}</h2>
+  <ol>
+    {%- for each in obj[1] %}
+    <li>
+      <label>
+        <input type="checkbox"{% if obj[0] == 'done' %} checked{% endif %}>
+        {{ each }}
+      </label>
+    </li>
+    {%- endfor %}
+  </ol>
 {% endfor %}
